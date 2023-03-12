@@ -42,6 +42,10 @@ const Header = () => {
         };
     }, []);
 
+    useEffect(() => {
+        console.log(active);
+    }, [headerRef]);
+
     return (
         <div ref={headerRef} className="header">
             <div className="header__wrap container">
