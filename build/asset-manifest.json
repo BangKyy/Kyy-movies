@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.27cc4e27.css",
+    "main.js": "/static/js/main.4076a1eb.js",
+    "static/media/boxicons.svg": "/static/media/boxicons.045b05bf2dc119267a90.svg",
+    "static/media/boxicons.eot": "/static/media/boxicons.092b78589f3f53e60030.eot",
+    "static/media/boxicons.woff": "/static/media/boxicons.0f4528cf3c75a4b361c0.woff",
+    "static/media/boxicons.ttf": "/static/media/boxicons.cbd149c55e2396cb52e7.ttf",
+    "static/media/boxicons.woff2": "/static/media/boxicons.8d765747a5588f36ff61.woff2",
+    "static/media/KyyLogo.png": "/static/media/KyyLogo.fbd9b7ba1cf09e2b2e96.png",
+    "index.html": "/index.html",
+    "main.27cc4e27.css.map": "/static/css/main.27cc4e27.css.map",
+    "main.4076a1eb.js.map": "/static/js/main.4076a1eb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.27cc4e27.css",
+    "static/js/main.4076a1eb.js"
+  ]
+}
