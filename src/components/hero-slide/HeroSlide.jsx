@@ -6,8 +6,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import Button, { OutlineButton } from '../button/Button';
 import Modal, { ModalContent } from '../modal/Modal';
 
-import tmdbApi, { category, movieType } from '../../api/tmdbApi.js';
-import apiConfig from '../../api/apiConfig.js';
+import tmdbApi, { category, movieType } from '../../api/tmdbApi';
+import apiConfig from '../../api/apiConfig';
 
 import './hero-slide.scss';
 import { useHistory } from 'react-router';
@@ -19,15 +19,14 @@ const HeroSlide = () => {
     const [movieItems, setMovieItems] = useState([]);
 
     useEffect(() => {
-        // console.log(movieType)
         const getMovies = async () => {
             const params = {page: 1}
             try {
                 const response = await tmdbApi.getMoviesList(movieType.popular, {params});
-                setMovieItems(response.results.slice(0, 4));
-                console.log(response)
-            } catch (error){
-                console.log(error);
+                setMovieItems(response.results.slice(1, 4));
+                console.log(response);
+            } catch {
+                console.log('error');
             }
         }
         getMovies();
@@ -41,7 +40,7 @@ const HeroSlide = () => {
                 spaceBetween={0}
                 slidesPerView={1}
                 autoplay={{delay: 3000}}
-            >   
+            >
                 {
                     movieItems.map((item, i) => (
                         <SwiperSlide key={i}>
@@ -51,7 +50,6 @@ const HeroSlide = () => {
                         </SwiperSlide>
                     ))
                 }
-
             </Swiper>
             {
                 movieItems.map((item, i) => <TrailerModal key={i} item={item}/>)
@@ -69,7 +67,7 @@ const HeroSlideItem = props => {
     const background = apiConfig.originalImage(item.backdrop_path ? item.backdrop_path : item.poster_path);
 
     const setModalActive = async () => {
-        const modal = document.querySelector(`#modal_${item.id}`)
+        const modal = document.querySelector(`#modal_${item.id}`);
 
         const videos = await tmdbApi.getVideos(category.movie, item.id);
 
@@ -106,7 +104,7 @@ const HeroSlideItem = props => {
                 </div>
             </div>
         </div>
-    );
+    )
 }
 
 const TrailerModal = props => {
@@ -119,7 +117,7 @@ const TrailerModal = props => {
     return (
         <Modal active={false} id={`modal_${item.id}`}>
             <ModalContent onClose={onClose}>
-                <iframe ref={iframeRef} width="100%" height="500%" title="trailer"></iframe>
+                <iframe ref={iframeRef} width="100%" height="500px" title="trailer"></iframe>
             </ModalContent>
         </Modal>
     )
