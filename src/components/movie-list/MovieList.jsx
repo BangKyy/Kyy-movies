@@ -6,7 +6,7 @@ import './movie-list.scss';
 import { SwiperSlide, Swiper } from 'swiper/react';
 // import { Link } from 'react-router-dom';
 
-// import Button from '../button/Button'
+// import Button from '../button/Button';
 
 import tmdbApi, { category } from '../../api/tmdbApi';
 // import apiConfig from '../../api/apiConfig';
@@ -38,23 +38,23 @@ const MovieList = props => {
         getList();
     }, []);
 
-  return (
-    <div className="movie-list">
-        <Swiper
-            grabCursor={true}
-            spaceBetween={10}
-            slidesPerView={'auto'}
-        >
-            {
-                items.map((item, i) => (
-                    <SwiperSlide key={i}>
-                        <MovieCard item={item} category={props.category}/>
-                    </SwiperSlide>
-                ))
-            }
-        </Swiper>
-    </div>
-  )
+    return (
+        <div className="movie-list">
+            <Swiper
+                grabCursor={true}
+                spaceBetween={10}
+                slidesPerView={'auto'}
+            >
+                {
+                    items.map((item, i) => (
+                        <SwiperSlide key={i}>
+                            <MovieCard item={item} category={props.category}/>
+                        </SwiperSlide>
+                    ))
+                }
+            </Swiper>
+        </div>
+    );
 }
 
 MovieList.propTypes = {
@@ -62,4 +62,4 @@ MovieList.propTypes = {
     type: PropTypes.string.isRequired
 }
 
-export default MovieList
+export default MovieList;
