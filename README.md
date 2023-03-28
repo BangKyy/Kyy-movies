@@ -111,3 +111,51 @@ If things goes well, this section should automatically be replaced by a list of 
 <br/>  
 
 
+## Installation
+
+Use the package manager [Swiper Js](https://swiperjs.com/react) to install Swiper.
+
+```bash
+npm install swiper
+```
+Use the package manager [Axios](https://axios-http.com/) to install Axios.
+
+```bash
+npm install axios
+```
+Use the package manager [scss](https://sass-lang.com/) to install scss.
+
+```bash
+npm install -g sass
+```
+Use the package manager [Router](https://www.npmjs.com/package/query-string) to install query-string.
+
+```bash
+npm i query-string
+```
+
+## Usage
+
+```python
+import axios from 'axios';
+import 'swiper/swiper.min.css';
+
+```
+
+## Resource
+
+```python
+Google font: https://fonts.google.com/
+
+Boxicons: https://boxicons.com/
+
+Images: https://unsplash.com/
+
+API: https://www.themoviedb.org/
+
+```
+
+## Preview
+![Preview-movies](https://github.com/[BangKyy]/[Kyy-movies]/blob/[main]/image.png?raw=true)
+
+
