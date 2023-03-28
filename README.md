@@ -156,6 +156,7 @@ API: https://www.themoviedb.org/
 ```
 
 ## Preview
-![Preview-movies](https://github.com/[BangKyy]/[Kyy-movies]/blob/[main]/image.png?raw=true)
+<img width="1900" alt="Preview-movies" src="https://user-images.githubusercontent.com/98859174/228201352-4f8baa12-91cc-4a7c-86ac-be0d74655ce6.png">
+
 <br>
 ![preview-long](https://user-images.githubusercontent.com/98859174/228198007-73044a5b-6d1d-4da4-aa43-bb174086ea18.png)
