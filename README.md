@@ -113,6 +113,11 @@ If things goes well, this section should automatically be replaced by a list of 
 
 ## Installation
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d180e044-f035-433e-9c78-b7f82dbf2371/deploy-status)](https://app.netlify.com/sites/kyy-movies/deploys)
+
+
+## Installation
+
 Use the package manager [Swiper Js](https://swiperjs.com/react) to install Swiper.
 
 ```bash
