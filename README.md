@@ -113,8 +113,7 @@ If things goes well, this section should automatically be replaced by a list of 
 
 ## Deploy
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/d180e044-f035-433e-9c78-b7f82dbf2371/deploy-status)](https://app.netlify.com/sites/kyy-movies/deploys)
-
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f6f998af-749a-4640-a5e6-fd175825dac0/deploy-status)](https://app.netlify.com/sites/kyy-movies/deploys)
 
 ## Installation
 
